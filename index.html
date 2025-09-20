@@ -1,1 +1,120 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feladatok – Egyszerű weboldal</title>
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #3b82f6;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem;
+    }
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0 0 .25rem 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      padding: 0;
+      margin: .5rem 0 0 0;
+    }
+    nav a {
+      display: inline-block;
+      padding: .5rem .9rem;
+      border: 1px solid var(--border);
+      border-radius: .75rem;
+      background: #fff;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform .05s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    nav a:hover { box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+    nav a:active { transform: translateY(1px); }
+    main { padding: 1.25rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1rem 1.25rem;
+      margin: 0 auto 1rem auto;
+      max-width: 1000px;
+    }
+    section h2 { margin-top: 0; }
+    .muted { color: var(--muted); }
+    /* Aktív szakasz kiemelése, ha horgonyra ugrunk */
+    :target { outline: 3px solid var(--accent); outline-offset: 4px; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 2rem 1rem 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="site-title">Feladatok</div>
+      <nav aria-label="Főmenü">
+        <ul>
+          <li><a href="#feladat1">1. feladat</a></li>
+          <li><a href="#feladat2">2. feladat</a></li>
+          <li><a href="#feladat3">3. feladat</a></li>
+          <li><a href="#feladat4">4. feladat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="feladat1">
+      <h2>1. feladat</h2>
+      <p class="muted">Ide írd az első feladat leírását, követelményeit vagy a megoldást.</p>
+    </section>
+
+    <section id="feladat2">
+      <h2>2. feladat</h2>
+      <p class="muted">Ide jöhet a második feladat szövege.</p>
+    </section>
+
+    <section id="feladat3">
+      <h2>3. feladat</h2>
+      <p class="muted">Harmadik feladat részletei.</p>
+    </section>
+
+    <section id="feladat4">
+      <h2>4. feladat</h2>
+      <p class="muted">Negyedik feladat tartalma.</p>
+    </section>
+  </main>
+
+  <footer>
+    Egyszerű sablon – szabadon testre szabható.
+  </footer>
+</body>
+</html>
 
